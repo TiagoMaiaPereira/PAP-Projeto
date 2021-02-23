@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -186,7 +186,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8c36184e8c3bfff4887ccb6427f10b65, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -384,7 +384,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.06310271, y: -0.7029174, z: 0.06285631, w: 0.7056729}
+  m_LocalRotation: {x: 0.06305131, y: -0.70349395, z: 0.06290787, w: 0.70509815}
   m_LocalPosition: {x: 20.83, y: 5.08, z: -0.11000001}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -481,7 +481,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8c36184e8c3bfff4887ccb6427f10b65, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -594,7 +594,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: bc6dfb06b3adb024ba63d35c82bc217a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -790,7 +790,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783476313}
-  m_LocalRotation: {x: 0.06310271, y: -0.7029174, z: 0.06285631, w: 0.7056729}
+  m_LocalRotation: {x: 0.06305131, y: -0.70349395, z: 0.06290787, w: 0.70509815}
   m_LocalPosition: {x: 20.83, y: 5.08, z: -0.11000001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
