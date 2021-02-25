@@ -29,7 +29,7 @@ public class Movement : MonoBehaviour
         Vector3 direction = new Vector3(-vertical, 0f, horizontal).normalized; 
         direction.y = directionY;
 
-        //character go brrrr & turning
+        //character movement & turning
         if (direction.magnitude >= 0.1f)
         {
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
