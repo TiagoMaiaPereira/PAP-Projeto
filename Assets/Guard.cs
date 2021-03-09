@@ -15,6 +15,7 @@ public class Guard : MonoBehaviour
     public int destPoint = 0;
     public Transform goal;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,12 +55,18 @@ public class Guard : MonoBehaviour
 
     void OnTriggerEnter(Collider view)
     {
-        playerSeen = true;
+        if(view.tag == "player")
+        {
+            playerSeen = true;
+        }
     }
 
     void OnTriggerExit(Collider view)
     {
-        playerSeen = false;
+        if (view.tag == "player")
+        {
+            playerSeen = false;
+        }
     }
     void LookAtPlayer() //for testing purposes
     {
@@ -69,6 +76,6 @@ public class Guard : MonoBehaviour
 
     void Chase()
     {
-        transform.Translate(Vector3.forward * AIMoveSpeed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, player.position, AIMoveSpeed);
     }
 }
