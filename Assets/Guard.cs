@@ -46,11 +46,12 @@ public class Guard : MonoBehaviour
 
     void GoToNextPoint()
     {
+
         if (navPoint.Length == 0)
-        {
-            agent.destination = navPoint[destPoint].position;
-            destPoint = (destPoint + 1) % navPoint.Length;
-        }
+            return;
+
+        agent.destination = navPoint[destPoint].position;
+        destPoint = (destPoint + 1) % navPoint.Length;
     }
 
     void OnTriggerEnter(Collider view)
@@ -76,6 +77,6 @@ public class Guard : MonoBehaviour
 
     void Chase()
     {
-        transform.position = Vector3.MoveTowards(transform.position, player.position, AIMoveSpeed);
+        transform.Translate(Vector3.forward * AIMoveSpeed * Time.deltaTime);
     }
 }
