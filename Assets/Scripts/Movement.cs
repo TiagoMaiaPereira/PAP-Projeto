@@ -18,7 +18,6 @@ public class Movement : MonoBehaviour
 
     public Transform player;
 
-    public bool turned = false;
 
     // Update is called once per frame
     void Update()
