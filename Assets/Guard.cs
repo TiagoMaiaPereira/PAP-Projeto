@@ -20,7 +20,6 @@ public class Guard : MonoBehaviour
     void Start()
     {
         UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-        agent.destination = goal.position;
 
         agent.autoBraking = false;
     }
@@ -28,20 +27,16 @@ public class Guard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (playerSeen == true)
-        {
-            LookAtPlayer();
-            Chase();
-        }
-        else
-        {
-            GoToNextPoint();
-        }
         if (agent.remainingDistance < 0.5f)
         {
             GoToNextPoint();
         }
 
+        if (playerSeen == true)
+        {
+            LookAtPlayer();
+            Chase();
+        }
     }
 
     void GoToNextPoint()
