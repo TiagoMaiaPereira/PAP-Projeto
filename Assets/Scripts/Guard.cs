@@ -5,10 +5,10 @@ using UnityEngine;
 public class Guard : MonoBehaviour
 {
     public Transform player;
-    public bool playerSeen;
-    public float AIMoveSpeed = 5f;
+    public bool playerSeen; //Indica se o jogador é visto ou não
+    public float AIMoveSpeed = 5f; //velocidade de base
     public float damping;
-    public Collider view;
+    public Collider view; //"Campo de visão""
 
     public Transform[] navPoint;
     public UnityEngine.AI.NavMeshAgent agent;
@@ -27,7 +27,7 @@ public class Guard : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (agent.remainingDistance < 0.5f)
+        if (agent.remainingDistance < 0.5f) //Mede a distância ao ponto seguinte
         {
             GoToNextPoint();
         }
@@ -39,7 +39,7 @@ public class Guard : MonoBehaviour
         }
     }
 
-    void GoToNextPoint()
+    void GoToNextPoint() //move a entidade para o ponto seguinte
     {
 
         if (navPoint.Length == 0)
@@ -49,7 +49,7 @@ public class Guard : MonoBehaviour
         destPoint = (destPoint + 1) % navPoint.Length;
     }
 
-    void OnTriggerEnter(Collider view)
+    void OnTriggerEnter(Collider view) //Ativa quando o jogador entra no "campo de visão"
     {
         if(view.tag == "player")
         {
@@ -57,7 +57,7 @@ public class Guard : MonoBehaviour
         }
     }
 
-    void OnTriggerExit(Collider view)
+    void OnTriggerExit(Collider view) //Ativa quando o jogador sai do "campo de visão"
     {
         if (view.tag == "player")
         {
