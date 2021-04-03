@@ -395,8 +395,8 @@ Transform:
   m_Father: {fileID: 492028763}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &294291336
-BoxCollider:
+--- !u!135 &294291336
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -406,8 +406,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 9.504582, y: 4.1385016, z: 17.862108}
-  m_Center: {x: 0, y: 1.743403, z: 8.1498165}
+  m_Radius: 8
+  m_Center: {x: 0, y: 0, z: -1.67}
 --- !u!23 &294291337
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -600,7 +600,7 @@ MonoBehaviour:
   playerSeen: 0
   AIMoveSpeed: 4.75
   damping: 6
-  view: {fileID: 492028760}
+  view: {fileID: 294291336}
   navPoint:
   - {fileID: 1112947764}
   - {fileID: 1446810088}
