@@ -7,6 +7,6 @@ public class Goal : MonoBehaviour
 {
     public void OnTriggerEnter(Collider collision)
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
