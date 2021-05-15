@@ -28748,6 +28748,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1996386923122983405, guid: 60fbe623c0934a545837717236d48561,
         type: 3}
+    - target: {fileID: 3277858891513448748, guid: 739be92e99daed74a9e1e23f0a4ecc4a,
+        type: 3}
+      propertyPath: LightsModule.ratio
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3277858891513448749, guid: 739be92e99daed74a9e1e23f0a4ecc4a,
         type: 3}
       propertyPath: m_RootOrder

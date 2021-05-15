@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Movement : MonoBehaviour
 {
@@ -15,6 +16,10 @@ public class Movement : MonoBehaviour
     private float directionY; //para isolar o eixo Y
 
     public Transform player;
+
+    public int coins = 0;
+
+    public TextMeshProUGUI textCoins;
 
 
     // Update is called once per frame
@@ -34,7 +39,7 @@ public class Movement : MonoBehaviour
 
             controller.Move(direction * speed * Time.deltaTime);
         }
-       
+
         //salto
         if (Input.GetButtonDown("Jump") && controller.isGrounded) //aplica a velocidade de salto quando o botão correspondente a salto (Barra de espaço) é premido
         {
@@ -45,5 +50,13 @@ public class Movement : MonoBehaviour
 
     }
 
-
+    public void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        if(hit.collider.gameObject.tag == "coin")
+        {
+            coins++;
+            textCoins.text = coins.ToString();
+            Destroy(hit.gameObject);
+        }
+    }
 }
