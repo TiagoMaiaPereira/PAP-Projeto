@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 using UnityEngine.UI;
-
+using TMPro;
 public class MainMenu : MonoBehaviour
 {
 
@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
     public Dropdown resolutionDropdown;
 
     Resolution[] resolutions;
+
 
     void Start()
     {
@@ -23,12 +24,12 @@ public class MainMenu : MonoBehaviour
         List<string> options = new List<string>();
 
         int currentResolutionIndex = 0;
-        for (int i = 0; i <resolutions.Length; i++)
+        for (int i = 0; i < resolutions.Length; i++)
         {
             string option = resolutions[i].width + "x" + resolutions[i].height;
             options.Add(option);
 
-            if(resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
+            if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
             {
                 currentResolutionIndex = i;
             }
@@ -51,13 +52,13 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    //options menu
-    public void SetVolume (float volume) //slide do volume
+    //Menu de Opções
+    public void SetVolume(float volume) //slide do volume
     {
         audioMixer.SetFloat("volume", volume);
     }
 
-    public void SetQuality (int qualityIndex)
+    public void SetQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
     }
@@ -67,9 +68,16 @@ public class MainMenu : MonoBehaviour
         Screen.fullScreen = isFullScreen;
     }
 
-    public void SetResolution (int resolutionIndex)
+    public void SetResolution(int resolutionIndex)
     {
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+    }
+
+    //Selecção de Níveis
+
+    public void startAtLevel(string lvlName)
+    {
+        SceneManager.LoadScene(lvlName);
     }
 }

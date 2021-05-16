@@ -21,6 +21,10 @@ public class Movement : MonoBehaviour
 
     public TextMeshProUGUI textCoins;
 
+    private void Start()
+    {
+        coins = 0;
+    }
 
     // Update is called once per frame
     void Update()
