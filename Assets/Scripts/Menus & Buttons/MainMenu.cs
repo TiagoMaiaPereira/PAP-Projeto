@@ -17,6 +17,7 @@ public class MainMenu : MonoBehaviour
 
     void Start()
     {
+
         resolutions = Screen.resolutions;
 
         resolutionDropdown.ClearOptions();
