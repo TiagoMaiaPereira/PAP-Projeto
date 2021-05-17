@@ -6936,6 +6936,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerUI
       objectReference: {fileID: 0}
+    - target: {fileID: 2177543793355115749, guid: 7983c468511d82e4ea6c64ac81d66235,
+        type: 3}
+      propertyPath: m_PixelPerfect
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2177543793355115750, guid: 7983c468511d82e4ea6c64ac81d66235,
         type: 3}
       propertyPath: m_Pivot.x
@@ -7252,6 +7257,36 @@ PrefabInstance:
         type: 3}
       propertyPath: maxAngle
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287662149707782800, guid: d6108ddbb1121674dbdb1bf59d26e651,
+        type: 3}
+      propertyPath: outlineMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287662149707782803, guid: d6108ddbb1121674dbdb1bf59d26e651,
+        type: 3}
+      propertyPath: m_DrawHalo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287662149707782803, guid: d6108ddbb1121674dbdb1bf59d26e651,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287662149707782803, guid: d6108ddbb1121674dbdb1bf59d26e651,
+        type: 3}
+      propertyPath: m_SpotAngle
+      value: 87.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287662149707782803, guid: d6108ddbb1121674dbdb1bf59d26e651,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2287662149707782803, guid: d6108ddbb1121674dbdb1bf59d26e651,
+        type: 3}
+      propertyPath: m_BounceIntensity
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6108ddbb1121674dbdb1bf59d26e651, type: 3}
