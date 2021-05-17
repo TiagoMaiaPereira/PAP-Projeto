@@ -32,7 +32,7 @@ public class Guard : MonoBehaviour
             GoToNextPoint();
         }
 
-        if (fov.isInFOV == true)
+        if (fov.isInFOV == true) //apenas para teste
         {
             LookAtPlayer();
             Chase();
