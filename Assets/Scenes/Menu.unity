@@ -460,7 +460,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 27d5763ef34152a4daa0c6c93b22ae4e, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -6661,7 +6661,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: a9fdfc7c08f426942b9aa8ee02bf4d1f, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -9132,7 +9132,7 @@ GameObject:
   - component: {fileID: 607138655}
   - component: {fileID: 607138654}
   m_Layer: 5
-  m_Name: lvl_2_Button (2)
+  m_Name: lvl_2_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11742,7 +11742,7 @@ GameObject:
   - component: {fileID: 823742884}
   - component: {fileID: 823742883}
   m_Layer: 5
-  m_Name: lvl_3_Button (1)
+  m_Name: lvl_3_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19103,7 +19103,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 2e34038690e6ae040b064e3b062735b3, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -24244,7 +24244,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 64f067f006739e743a92af96ef6a6b15, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
