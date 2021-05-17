@@ -41,14 +41,9 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
     }
 
-
-    public void OptionsMenu()
-    {
-
-    }
-
     public void QuitLevel()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Menu");
     }
 }
