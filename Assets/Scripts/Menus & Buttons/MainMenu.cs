@@ -18,6 +18,8 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
 
+        Time.timeScale = 1f;
+
         resolutions = Screen.resolutions;
 
         resolutionDropdown.ClearOptions();

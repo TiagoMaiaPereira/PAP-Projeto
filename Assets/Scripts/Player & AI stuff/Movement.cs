@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Movement : MonoBehaviour
 {
@@ -21,8 +22,17 @@ public class Movement : MonoBehaviour
 
     public TextMeshProUGUI textCoins;
 
+    FOVDetection fov;
+
+    public GameObject gameOver;
+
+
     private void Start()
     {
+        Time.timeScale = 1f;
+        fov = FindObjectOfType<FOVDetection>();
+        gameOver.SetActive(false);
+        controller.enabled = true;
         coins = 0;
     }
 
@@ -51,6 +61,12 @@ public class Movement : MonoBehaviour
         }
 
         directionY -= gravity * Time.deltaTime; //aplica a força de gravidade à entidade uma vez no ar
+
+        if(fov.isInFOV == true)
+        {
+            gameOver.SetActive(true);
+            Time.timeScale = 0f;
+        }
 
     }
 

@@ -14,7 +14,6 @@ public class Guard : MonoBehaviour
     public Transform goal;
     FOVDetection fov;
 
-
     // Start is called before the first frame update
     void Start()
     {
