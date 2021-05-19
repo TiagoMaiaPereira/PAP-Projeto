@@ -20,7 +20,6 @@ public class Movement : MonoBehaviour
 
     public GameObject gameOver;
 
-
     private void Start()
     {
         Time.timeScale = 1f;
