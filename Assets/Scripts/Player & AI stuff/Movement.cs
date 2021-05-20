@@ -32,6 +32,7 @@ public class Movement : MonoBehaviour
     private void Start()
     {
         currentLvl = SceneManager.GetActiveScene().buildIndex;
+        lvl.text = currentLvl.ToString();
         Time.timeScale = 1f;
         fov = FindObjectOfType<FOVDetection>();
         gameOver.SetActive(false);
