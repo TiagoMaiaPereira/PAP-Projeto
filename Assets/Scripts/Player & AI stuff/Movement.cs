@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour
 {
@@ -16,12 +17,21 @@ public class Movement : MonoBehaviour
 
     public TextMeshProUGUI textCoins;
 
+    public TextMeshProUGUI lvl;
+
     FOVDetection fov;
 
     public GameObject gameOver;
 
+    public Animator anim;
+
+    public int currentLvl;
+
+    public bool inGameOver = false;
+
     private void Start()
     {
+        currentLvl = SceneManager.GetActiveScene().buildIndex;
         Time.timeScale = 1f;
         fov = FindObjectOfType<FOVDetection>();
         gameOver.SetActive(false);
@@ -44,11 +54,17 @@ public class Movement : MonoBehaviour
             transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
 
             controller.Move(direction * speed * Time.deltaTime);
+            anim.SetFloat("Speed", speed);
+        } else if (direction.magnitude <= 0f)
+        {
+            anim.SetFloat("Speed", 0);
         }
+
 
         
         if(fov.isInFOV == true)
         {
+            inGameOver = true;
             gameOver.SetActive(true);
             Time.timeScale = 0f;
         }
