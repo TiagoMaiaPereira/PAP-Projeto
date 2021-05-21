@@ -7179,6 +7179,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Guard
       objectReference: {fileID: 0}
+    - target: {fileID: 1871855973433745298, guid: a49e84d18163cdc4c9c7d37eb021fc10,
+        type: 3}
+      propertyPath: m_Speed
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1871855973433745300, guid: a49e84d18163cdc4c9c7d37eb021fc10,
         type: 3}
       propertyPath: goal
@@ -7370,6 +7375,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.04803382
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931150283651597412, guid: bc245cf8c1302fb4b94551704cdf1d36,
+        type: 3}
+      propertyPath: outlineColor.b
+      value: 0.03921567
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931150283651597412, guid: bc245cf8c1302fb4b94551704cdf1d36,
+        type: 3}
+      propertyPath: outlineColor.g
+      value: 0.86402255
+      objectReference: {fileID: 0}
+    - target: {fileID: 5931150283651597412, guid: bc245cf8c1302fb4b94551704cdf1d36,
+        type: 3}
+      propertyPath: outlineColor.r
+      value: 0.9607843
       objectReference: {fileID: 0}
     - target: {fileID: 5931150283651597413, guid: bc245cf8c1302fb4b94551704cdf1d36,
         type: 3}
