@@ -4779,12 +4779,25 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 6572c152bf4679b4da83db119d35cb85, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7911749260912936543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5476897258075985198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dd176b15f58a7a4f810a6e6c485ad46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coin: {fileID: 422817336}
 --- !u!1001 &4665923656636115071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4800,17 +4813,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 05aef1594a445e34ebd3afbb953e7bca,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.304161
+      value: 17.75
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 05aef1594a445e34ebd3afbb953e7bca,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.274
+      value: 1.44
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 05aef1594a445e34ebd3afbb953e7bca,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.31
+      value: -121.344925
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 05aef1594a445e34ebd3afbb953e7bca,
         type: 3}
