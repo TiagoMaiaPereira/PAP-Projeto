@@ -1140,8 +1140,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 619a353b7c797024b9ece357d2af132e, type: 2}
+  m_sharedMaterial: {fileID: -3281472030244155570, guid: 619a353b7c797024b9ece357d2af132e,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2311,7 +2312,7 @@ GameObject:
   - component: {fileID: 6168374675295425630}
   - component: {fileID: 8074922792023905548}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: GameOverScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2336,7 +2337,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -278.8}
+  m_AnchoredPosition: {x: 0, y: 125.8}
   m_SizeDelta: {x: 0, y: 557.5652}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &6767770274612478576
