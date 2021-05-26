@@ -260,6 +260,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8659294350904947020}
   - component: {fileID: 9196710152319482665}
+  - component: {fileID: 3238419063033342866}
   m_Layer: 0
   m_Name: Wood Beam
   m_TagString: Untagged
@@ -274,7 +275,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8313696562690403318}
-  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 51.333187, y: 189.95288, z: 157.13455}
   m_LocalScale: {x: 2.4999998, y: 2.5, z: 2.4999998}
   m_Children:
@@ -294,8 +295,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.32298583, y: 1.3911476, z: 0.77648485}
-  m_Center: {x: 0.20525202, y: 0.70604515, z: 0.11175765}
+  m_Size: {x: 0.32298586, y: 1.3911476, z: 0.26149055}
+  m_Center: {x: 0.20525204, y: 0.70604515, z: -0.097960934}
+--- !u!65 &3238419063033342866
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8313696562690403318}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3148986, y: 0.22324792, z: 0.65970296}
+  m_Center: {x: 0.19102266, y: 1.1056738, z: 0.17014861}
 --- !u!1 &8313696563248172896
 GameObject:
   m_ObjectHideFlags: 0
