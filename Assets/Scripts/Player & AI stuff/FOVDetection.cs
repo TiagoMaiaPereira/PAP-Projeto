@@ -40,7 +40,7 @@ public class FOVDetection : MonoBehaviour
 
     public static bool inFOV(Transform checkingObject, Transform target, float maxAngle, float maxRadius)
     {
-        Collider[] overlaps = new Collider[30]; //Deteta todas as colisões dentro do círculo amarelo
+        Collider[] overlaps = new Collider[60]; //Deteta todas as colisões dentro do círculo amarelo
         int count = Physics.OverlapSphereNonAlloc(checkingObject.position, maxRadius, overlaps);
 
         for(int i = 0; i < count + 1; i++) //Para cada colisão detetada

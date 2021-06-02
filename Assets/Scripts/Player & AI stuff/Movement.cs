@@ -19,8 +19,6 @@ public class Movement : MonoBehaviour
 
     public TextMeshProUGUI lvl;
 
-    FOVDetection fov;
-
     public GameObject gameOver;
 
     public Animator anim;
@@ -34,7 +32,6 @@ public class Movement : MonoBehaviour
         currentLvl = SceneManager.GetActiveScene().buildIndex;
         lvl.text = currentLvl.ToString();
         Time.timeScale = 1f;
-        fov = FindObjectOfType<FOVDetection>();
         gameOver.SetActive(false);
         controller.enabled = true;
         coins = 0;
@@ -61,15 +58,13 @@ public class Movement : MonoBehaviour
             anim.SetFloat("Speed", 0);
         }
 
+    }
 
-        
-        if(fov.isInFOV == true)
-        {
-            inGameOver = true;
-            gameOver.SetActive(true);
-            Time.timeScale = 0f;
-        }
-
+    public void GotCaught()
+    {
+        inGameOver = true;
+        gameOver.SetActive(true);
+        Time.timeScale = 0f;
     }
 
     public void OnControllerColliderHit(ControllerColliderHit hit)
